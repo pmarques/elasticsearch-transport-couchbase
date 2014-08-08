@@ -41,6 +41,8 @@ Configuration
 - couchbase.checkpointDocumentType - the document type to store replication checkpoint documents as defaults to "couchbaseCheckpoint"
 - couchbase.num_vbuckets - the number of vbuckets that ElasticSearch should pretent to have (default on Mac is 64, 1024 on all other platforms)  This value MUST match the number of vbuckets on the source Couchbase cluster.
 - couchbase.maxConcurrentRequests - the number of concurrent requests that the plug-in will allow, default 1024 (lower this if the load on the machine gets too high)
+- couchbase.documentTypeRoutingFields.{type}: {key} - configure routing key is in form of doc.(...)
+
 
 Couchbase Document Expiration
 =============================
